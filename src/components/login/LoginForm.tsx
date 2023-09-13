@@ -32,7 +32,7 @@ const LoginForm: React.FC = () => {
 
     return (
         <LoginFormStyled>
-            <h1>login</h1>
+            <p>login</p>
             <input type="text" placeholder="entrez votre prénom..." onChange={handleChange} value={userName} />
             <button onClick={handleClick}>Accèder à la page.</button>
         </LoginFormStyled>

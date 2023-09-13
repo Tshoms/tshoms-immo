@@ -18,9 +18,22 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
+    "baseUrl": ".", // setting a value for baseUrl is required
+    "paths": {
+      "components/*": [
+        "./components/*",
+        "./components"
+      ]
+    },
+    "jsx": "react"
   },
   "include": [
-    "src"
+    "src",
+    "pages/**/**",
+    "styles/**/**",
+    "assets/**/**",
+    "video/**/**",
+    "components",
+    "tsconfig.json",
   ]
 }
