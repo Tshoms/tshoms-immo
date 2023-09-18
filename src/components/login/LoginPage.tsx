@@ -17,7 +17,8 @@ const LoginPage = () => {
 
             <div className="content">
                 <h1>Tshoms Immobilier</h1>
-                <h2>Welcome to my website</h2>
+                <h2>Bienvenue sur mon site web</h2>
+                <hr />
                 <LoginForm />
             </div>
         </div>

@@ -3,6 +3,8 @@ import { useState } from "react";
 import React from "react";
 import { useNavigate, createSearchParams } from "react-router-dom";
 import TextInput from "src/reusable-ui/TextInput";
+import PrimaryButton from "src/reusable-ui/PrimaryButton";
+import { BiUserCircle } from "react-icons/bi"
 
 
 
@@ -35,10 +37,12 @@ const LoginForm = () => {
 
     return (
         <LoginFormStyled>
-            <p>login</p>
-            {/* <input type="text" placeholder="entrez votre prénom..." onChange={handleChange} value={userName} /> */}
+
+            <div className="user-logo">
+                <BiUserCircle className="logo" />
+            </div>
             <TextInput onChange={handleChange} value={userName} />
-            <button onClick={handleClick}>Accèder à la page.</button>
+            <PrimaryButton onClick={handleClick} label="Accèder à la page." />
         </LoginFormStyled>
     )
 
@@ -51,9 +55,21 @@ justify-content: center;
 align-items: center;
 height: 300px;
 width: 30%;
-border: 3px solid white;
+/* border: 3px solid white; */
 /* border-radius: 20%; */
-  
+  .user-logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75px;
+      width: 100%;
+
+
+      .logo{
+          color: white;
+          font-size: 60px;
+      }
+  }
 `;
 
 export default LoginForm
