@@ -2,22 +2,25 @@ import styled from "styled-components"
 import { useState } from "react";
 import React from "react";
 import { useNavigate, createSearchParams } from "react-router-dom";
+import TextInput from "src/reusable-ui/TextInput";
 
 
 
-const LoginForm: React.FC = () => {
+
+const LoginForm = () => {
     // state ---------
     const [userName, setUserName] = useState<string>("");
 
     const navigate = useNavigate();
+    // React.ChangeEvent<HTMLInputElement>
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        console.log("handleChange :", event.target.value);
+        setUserName(event.target.value)
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setUserName(e.target.value)
-        // console.log("value of username", userName);
     }
 
-    const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        e.preventDefault();
+    const handleClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        event.preventDefault();
 
         navigate({
             pathname: "/Home/:username",
@@ -33,21 +36,23 @@ const LoginForm: React.FC = () => {
     return (
         <LoginFormStyled>
             <p>login</p>
-            <input type="text" placeholder="entrez votre prénom..." onChange={handleChange} value={userName} />
+            {/* <input type="text" placeholder="entrez votre prénom..." onChange={handleChange} value={userName} /> */}
+            <TextInput onChange={handleChange} value={userName} />
             <button onClick={handleClick}>Accèder à la page.</button>
         </LoginFormStyled>
     )
 
 }
 
-const LoginFormStyled = styled.div`
+const LoginFormStyled = styled.form`
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 height: 300px;
-width: 300px;
-border: 1px solid black;
+width: 30%;
+border: 3px solid white;
+/* border-radius: 20%; */
   
 `;
 

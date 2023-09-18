@@ -4,18 +4,11 @@ import LoginForm from "./LoginForm";
 import immofirst from "../../assets/video/immovideofirst.mp4";
 
 
-// interface Props {
-//     src: string,
-//     autoPlay: boolean;
-//     loop: boolean;
-//     muted: boolean;
-// }
 
 
-const LoginPage: React.FC = () => {
+
+const LoginPage = () => {
     // state -----------
-
-    // comportement ----------
 
     return (
         <div className="main-home">
