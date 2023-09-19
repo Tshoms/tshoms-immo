@@ -4,18 +4,11 @@ import LoginForm from "./LoginForm";
 import immofirst from "../../assets/video/immovideofirst.mp4";
 
 
-// interface Props {
-//     src: string,
-//     autoPlay: boolean;
-//     loop: boolean;
-//     muted: boolean;
-// }
 
 
-const LoginPage: React.FC = () => {
+
+const LoginPage = () => {
     // state -----------
-
-    // comportement ----------
 
     return (
         <div className="main-home">
@@ -24,7 +17,8 @@ const LoginPage: React.FC = () => {
 
             <div className="content">
                 <h1>Tshoms Immobilier</h1>
-                <h2>Welcome to my website</h2>
+                <h2>Bienvenue sur mon site web</h2>
+                <hr />
                 <LoginForm />
             </div>
         </div>

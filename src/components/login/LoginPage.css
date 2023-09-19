@@ -57,4 +57,11 @@
     margin-top: 25px;
     margin-bottom: 15px;
   }
+
+  hr{
+    height: 2px;
+    width: 20%;
+    background-color: white;
+    margin-bottom: 10px;
+  }
   

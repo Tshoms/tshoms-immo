@@ -29,10 +29,10 @@
   },
   "include": [
     "src",
-    "pages/**/**",
-    "styles/**/**",
-    "assets/**/**",
-    "video/**/**",
+    "pages/**/**/",
+    "styles/**/**/",
+    "assets/**/**/",
+    "video/**/**/",
     "components",
     "tsconfig.json",
   ]
