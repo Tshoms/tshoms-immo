@@ -16,7 +16,6 @@ const LoginForm = () => {
     const navigate = useNavigate();
     // React.ChangeEvent<HTMLInputElement>
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        console.log("handleChange :", event.target.value);
         setUserName(event.target.value)
 
     }
