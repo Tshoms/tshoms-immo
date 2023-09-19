@@ -20,30 +20,6 @@ const Home = () => {
 
 
     useEffect(() => {
-        const getApi = async () => {
-            const options: any = {
-                method: 'GET',
-                url: 'https://realty-in-us.p.rapidapi.com/properties/list-sold',
-                params: {
-                    city: 'New York City',
-                    state_code: 'NY',
-                    offset: '0',
-                    limit: '10',
-                    sort: 'relevance'
-                },
-                headers: {
-                    'X-RapidAPI-Key': 'af1affac82msh5641b348ae4a954p113040jsn5e22d843cd46',
-                    'X-RapidAPI-Host': 'realty-in-us.p.rapidapi.com'
-                }
-            };
-            getApi();
-
-
-            const response = await axios.request(options);
-            console.log(response.data);
-            setLocation(response.data)
-        }
-
     }, [])
 
     return (
