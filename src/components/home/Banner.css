@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    position: relative;
+  }
+  
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* position: relative; */
+  }
+  
+  .content {
+    /* position: absolute; */
+  /* top: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid red; */
+    /* color: white; */
+  }
+  
+  
+  
+  /* rgba - pour l'effet noir */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+  }
+  
+  h1 {
+    font-family: 'Caveat', cursive;
+    color: white;
+    font-size: 80px;
+    margin-bottom: 25px;
+  }
+  
+  
